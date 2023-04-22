@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avengers</title>
+</head>
+<body>
+	<h1>Avengers</h1>
+
+Test Text! This doesn't really matter! It's all in the console, so look there!
+
+<script>
+	const avengers = [ 
+	  { 
+	     "name": "Iron Man", 
+	     "alter_ego": "Tony Stark", 
+	     "primary_power": "Powered Armor", 
+	     "universe": "Marvel Cinematic Universe", 
+	     "age": 48 
+	  },
+	  {
+	      "name": "Captain America", 
+	      "alter_ego": "Steve Rogers", 
+	      "primary_power": "Super Soldier Serum", 
+	      "universe": "Marvel Cinematic Universe", 
+	      "age": 105 
+	  }, 
+	  { 
+	      "name": "Thor", 
+	      "alter_ego": "Thor Odinson",
+	      "primary_power": "Super Strength", 
+	      "universe": "Marvel Cinematic Universe", 
+	      "age": 1500 
+	  },
+	  {
+	      "name": "The Hulk", 
+	      "alter_ego": "Bruce Banner",
+	      "primary_power": "Super Strength",
+	      "universe": "Marvel Cinematic Universe",
+	      "age": 49 
+	  },
+	  { 
+	      "name": "Black Widow",
+	       "alter_ego": "Natasha Romanoff",
+	      "primary_power": "Expert Spy and Assassin",
+	      "universe": "Marvel Cinematic Universe",
+	      "age": 37
+	  },
+	  {
+	      "name": "Hawkeye", 
+	      "alter_ego": "Clint Barton",
+	      "primary_power": "Expert Marksman",
+	      "universe": "Marvel Cinematic Universe",
+	      "age": 51
+	   }
+	];
+
+	//  For each name in the array, write each name into the console.
+	for (let i = 0; i < avengers.length; i++) {
+	  console.log(avengers[i].name);
+	}
+
+	// For each name in the array, check if the "primary_power" is "Super Strength". If it is, write their name to the console.
+	for (let i = 0; i < avengers.length; i++) {
+	  if (avengers[i].primary_power === "Super Strength") {
+	    console.log(avengers[i].name);
+	  }
+	}
+
+	// Lastly, for each name, check if the superhero's age is >= 50. If it is, write both the name and age into the console.
+	for (let i = 0; i < avengers.length; i++) {
+	  if (avengers[i].age >= 50) {
+	    console.log(avengers[i].name + " - " + avengers[i].age);
+	  }
+	}	
+</script>
+
+</body>
+</html>
